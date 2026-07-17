@@ -53,7 +53,7 @@ Simon-Say-Game/
 
 ## 📸 Preview
 
-<img src= "GamePreviewSS.png" width="600" alt="Simon Says Game">
+<img src= "Preview/GamePreviewSS.png" width="600" alt="Simon Says Game">
 
 > Replace the image above with a screenshot of your game.
 
