@@ -12,9 +12,9 @@ The game tests your memory by generating a sequence of colored buttons. Your goa
 - 📈 Increasing difficulty with each level
 - 🖱️ Interactive button animations
 - 💡 Visual feedback for game and user clicks
-- 🏆 Highest score tracking during gameplay
+- 🏆 Tracks the highest score during the current session
 - ❌ Game over detection with restart option
-- 🎨 Simple and responsive UI
+- 🎨 Clean and responsive user interface
 
 ---
 
@@ -41,13 +41,14 @@ Simon-Say-Game/
 
 ## 🎮 How to Play
 
-1. Open **Game.html** in your browser.
-2. Press any key to start the game.
-3. Watch the highlighted color carefully.
-4. Click the buttons in the same order.
-5. Every successful level adds one more color to the sequence.
-6. The game ends if you click the wrong button.
-7. Try to beat your highest score!
+1. Clone or download the repository.
+2. Open **Game.html** in your preferred web browser.
+3. Press any key to start the game.
+4. Watch the highlighted color carefully.
+5. Repeat the sequence by clicking the buttons in the correct order.
+6. Each completed level adds a new color to the sequence.
+7. The game ends if you click the wrong button.
+8. Try to beat your highest score!
 
 ---
 
@@ -61,12 +62,13 @@ Simon-Say-Game/
 
 ## 🔮 Future Improvements
 
-- 🔊 Add sound effects for each button
-- 🎵 Background music
-- 📱 Better mobile responsiveness
-- 🏅 Save highest score using Local Storage
-- 🌙 Dark mode
-- 🎬 Smoother animations
+- 🔊 Add unique sound effects for each button
+- 💾 Save the highest score using Local Storage
+- 📱 Improve mobile responsiveness
+- 🌙 Add Dark Mode
+- 🎬 Smoother animations and transitions
+- ⏱️ Add multiple difficulty levels
+- 🎮 Implement a Strict Mode similar to the classic Simon game
 
 ---
 
