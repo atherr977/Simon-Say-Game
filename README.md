@@ -31,7 +31,7 @@ The game tests your memory by generating a sequence of colored buttons. Your goa
 ```
 Simon-Say-Game/
 │
-├── Game.html      # Main HTML file
+├── index.html      # Main HTML file
 ├── Game.css       # Styling
 ├── Game.js        # Game logic
 └── README.md
