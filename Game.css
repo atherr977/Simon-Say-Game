@@ -39,7 +39,7 @@ body {
   background-color: green;
 }
  .watermark {
-  /* position: fixed; */
+  position: fixed;
   bottom: 50px;         
   left: 50%;           
   transform: translateX(-50%);
