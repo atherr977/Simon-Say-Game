@@ -86,12 +86,12 @@ async function showRandomFact() {
   factElement.innerHTML = "Loading a random fact...";
 
   try {
-    let response = await fetch("https://api.api-ninjas.com/v1/facts");
+    let response = await fetch("https://catfact.ninja/fact");
     let data = await response.json();
 
-    factElement.innerHTML = `💡 <strong>Random Fact:</strong> ${data.text}`;
+    factElement.innerHTML = `💡 <strong>Cat Fact:</strong> ${data.text}`;
   } catch (err) {
-    factElement.innerHTML = "Couldn't load a random fact.";
+    factElement.innerHTML = "Couldn't load a cat fact.";
     console.error(err);
   }
 }
