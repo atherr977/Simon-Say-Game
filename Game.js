@@ -61,6 +61,7 @@ function checkAns(idx) {
     setTimeout(function () {
       document.querySelector("body").style.backgroundColor = "white";
     }, 500);
+    showRandomFact();
     reset();
   }
 }
@@ -78,6 +79,21 @@ function btnPress() {
 let allBtns = document.querySelectorAll(".btn");
 for (btn of allBtns) {
   btn.addEventListener("click", btnPress);
+}
+async function showRandomFact() {
+  let factElement = document.getElementById("fact");
+
+  factElement.innerHTML = "Loading a random fact...";
+
+  try {
+    let response = await fetch("https://uselessfacts.jsph.pl/api/v2/facts/random");
+    let data = await response.json();
+
+    factElement.innerHTML = `💡 <strong>Random Fact:</strong> ${data.text}`;
+  } catch (err) {
+    factElement.innerHTML = "Couldn't load a random fact.";
+    console.error(err);
+  }
 }
 
 function reset() {
