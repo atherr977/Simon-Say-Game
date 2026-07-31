@@ -86,7 +86,7 @@ async function showRandomFact() {
   factElement.innerHTML = "Loading a random fact...";
 
   try {
-    let response = await fetch("https://restcountries.com/v3.1/all");
+    let response = await fetch("https://api.api-ninjas.com/v1/facts");
     let data = await response.json();
 
     factElement.innerHTML = `💡 <strong>Random Fact:</strong> ${data.text}`;
