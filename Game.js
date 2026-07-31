@@ -83,15 +83,22 @@ for (btn of allBtns) {
 async function showRandomFact() {
   let factElement = document.getElementById("fact");
 
-  factElement.innerHTML = "Loading a random fact...";
+  factElement.innerHTML = "Loading a random article...";
 
   try {
-    let response = await fetch("https://uselessfacts.jsph.pl/api/v2/facts/random");
+    let response = await fetch(
+      "https://en.wikipedia.org/api/rest_v1/page/random/summary"
+    );
+
     let data = await response.json();
 
-    factElement.innerHTML = `💡 <strong>Random Fact:</strong> ${data.text}`;
+    factElement.innerHTML = `
+      🌍 <strong>Did You Know?</strong><br>
+      <strong>${data.title}</strong><br>
+      ${data.extract}
+    `;
   } catch (err) {
-    factElement.innerHTML = "Couldn't load a random fact.";
+    factElement.innerHTML = "Couldn't load a random article.";
     console.error(err);
   }
 }
