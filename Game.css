@@ -38,3 +38,16 @@ body {
 .userflash {
   background-color: green;
 }
+ .watermark {
+  position: fixed;
+  bottom: 50px;         
+  left: 50%;           
+  transform: translateX(-50%);
+  opacity: 0.5;        
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 14px;
+  color: #231515;       
+  pointer-events: none; 
+  z-index: 100;         
+  background-color: #c4aec0;
+}
