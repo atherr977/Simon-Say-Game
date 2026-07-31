@@ -81,28 +81,19 @@ for (btn of allBtns) {
   btn.addEventListener("click", btnPress);
 }
 async function showRandomFact() {
-  let factElement = document.getElementById("fact");
+    let factElement = document.getElementById("fact");
+    factElement.innerHTML = "Loading a random fact...";
 
-  factElement.innerHTML = "Loading a random article...";
+    try {
+        let response = await fetch("https://uselessfacts.jsph.pl/api/v2/facts/random");
+        let data = await response.json();
 
-  try {
-    let response = await fetch(
-      "https://en.wikipedia.org/api/rest_v1/page/random/summary"
-    );
-
-    let data = await response.json();
-
-    factElement.innerHTML = `
-      🌍 <strong>Did You Know?</strong><br>
-      <strong>${data.title}</strong><br>
-      ${data.extract}
-    `;
-  } catch (err) {
-    factElement.innerHTML = "Couldn't load a random article.";
-    console.error(err);
-  }
+        factElement.innerHTML = `💡 <strong>Random Fact:</strong> ${data.text}`;
+    } catch (err) {
+        factElement.innerHTML = "Couldn't load a random fact.";
+        console.error(err);
+    }
 }
-
 function reset() {
   started = false;
   gameSeq = [];
