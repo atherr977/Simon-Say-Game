@@ -39,7 +39,7 @@ body {
   background-color: green;
 }
  .watermark {
-  position: fixed;
+  /* position: fixed; */
   bottom: 50px;         
   left: 50%;           
   transform: translateX(-50%);
@@ -49,5 +49,5 @@ body {
   color: #231515;       
   pointer-events: none; 
   z-index: 100;         
-  background-color: #c4aec0;
+  /* background-color: #c4aec0; */
 }
