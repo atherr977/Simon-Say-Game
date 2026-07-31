@@ -15,7 +15,7 @@ document.addEventListener("keypress", function () {
     started = true;
 
     levelUp();
-     h2.innerHTML = `level:${level}</b> <br>Highest Score:<b>${HighestScore}</b>`;
+     //h2.innerHTML = `level:${level}</b> <br>Highest Score:<b>${HighestScore}</b>`;
   }
 });
 
@@ -37,7 +37,7 @@ function userFlash(btn) {
 function levelUp() {
   userSeq = [];
   level++;
-  h2.innerText = `Level ${level}`;
+ h2.innerHTML = `Level ${level}<br>Highest Score: <b>${HighestScore}</b>`;
 
   let randIdx = Math.floor(Math.random() * 4);
   let randColor = btns[randIdx];
@@ -69,7 +69,7 @@ function btnPress() {
   let btn = this;
   userFlash(btn);
 
-  userColor = btn.getAttribute("id");
+ let userColor = btn.getAttribute("id");
   userSeq.push(userColor);
 
   checkAns(userSeq.length - 1);
