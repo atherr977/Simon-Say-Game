@@ -48,7 +48,6 @@ Simon-Say-Game/
 5. Every successful level adds one more color to the sequence.
 6. The game ends if you click the wrong button.
 7. Try to beat your highest score!
-
 ---
 
 ## 📸 Preview
