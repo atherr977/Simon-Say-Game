@@ -2,18 +2,21 @@
 
 A simple and interactive **Simon Says Memory Game** built using **HTML, CSS, and JavaScript**.
 
-The game tests your memory by generating a sequence of colored buttons. Your goal is to remember and repeat the sequence correctly. Each successful round increases the sequence length, making the game progressively more challenging.
+The game challenges your memory by generating a random sequence of colored buttons. The player has to remember and repeat the sequence correctly. With every successful round, the sequence becomes longer and the difficulty increases.
 
 ---
 
 ## 🚀 Features
 
 - 🎯 Random color sequence generation
-- 📈 Increasing difficulty with each level
-- 🖱️ Interactive button animations
-- 💡 Visual feedback for game and user clicks
+- 📈 Increasing difficulty with every level
+- 🖱️ Interactive button click animations
+- 💡 Visual feedback for game and user inputs
 - 🏆 Highest score tracking during gameplay
-- ❌ Game over detection with restart option
+- ❌ Game over detection
+- 🔄 Restart game using Start button
+- 📱 Works on both desktop and mobile devices
+- 🌍 Displays a random fact after game over
 - 🎨 Simple and responsive UI
 
 ---
@@ -23,6 +26,7 @@ The game tests your memory by generating a sequence of colored buttons. Your goa
 - HTML5
 - CSS3
 - JavaScript (Vanilla JS)
+- Fetch API (for random facts)
 
 ---
 
@@ -31,9 +35,9 @@ The game tests your memory by generating a sequence of colored buttons. Your goa
 ```
 Simon-Say-Game/
 │
-├── index.html      # Main HTML file
-├── Game.css       # Styling
-├── Game.js        # Game logic
+├── index.html      # Main HTML structure
+├── Game.css       # Styling and responsive design
+├── Game.js        # Game logic and functionality
 └── README.md
 ```
 
@@ -41,18 +45,19 @@ Simon-Say-Game/
 
 ## 🎮 How to Play
 
-1. Open **index.html** in your browser.
-2. Press any key to start the game.
+1. Open the game in your browser.
+2. Click the **Start Game** button to begin.
 3. Watch the highlighted color carefully.
-4. Click the buttons in the same order.
-5. Every successful level adds one more color to the sequence.
-6. The game ends if you click the wrong button.
-7. Try to beat your highest score!
+4. Click the buttons in the same sequence.
+5. Each correct round adds a new color to the sequence.
+6. The game ends when an incorrect button is pressed.
+7. Try to achieve your highest score!
+
 ---
 
 ## 📸 Preview
 
-<img src= "Preview/GamePreviewSS.png" width="600" alt="Simon Says Game">
+<img src="Preview/GamePreviewSS.png" width="600" alt="Simon Says Game">
 
 > Replace the image above with a screenshot of your game.
 
@@ -61,11 +66,12 @@ Simon-Say-Game/
 ## 🔮 Future Improvements
 
 - 🔊 Add sound effects for each button
-- 🎵 Background music
-- 📱 Better mobile responsiveness
+- 🎵 Add background music
 - 🏅 Save highest score using Local Storage
-- 🌙 Dark mode
-- 🎬 Smoother animations
+- 🌙 Add dark mode
+- 🎬 Add smoother animations
+- 🧠 Replay complete sequence for each level
+- 📊 Add leaderboard system
 
 ---
 
@@ -77,10 +83,16 @@ Clone the repository:
 git clone https://github.com/atherr977/Simon-Say-Game.git
 ```
 
-Open the project folder and launch:
+Open the project folder:
 
 ```
-Game.html
+cd Simon-Say-Game
+```
+
+Open:
+
+```
+index.html
 ```
 
 in your preferred web browser.
