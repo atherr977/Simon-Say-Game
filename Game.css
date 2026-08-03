@@ -46,6 +46,8 @@ body {
   font-size: 18px;
   border-radius: 10px;
   cursor: pointer;
+  display: block;
+  margin: 20px auto;
 }
 @media(max-width:600px){
 
