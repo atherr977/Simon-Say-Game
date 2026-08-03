@@ -41,6 +41,12 @@ body {
 body {
     padding-bottom: 60px;
 }
+#startBtn {
+  padding: 10px 25px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}
 
 .watermark {
     position: fixed;
