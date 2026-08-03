@@ -72,17 +72,22 @@ function checkAns(idx) {
 }
 
 function btnPress() {
+
+  if (!started) {
+    return;
+  }
+
   let btn = this;
   userFlash(btn);
 
- let userColor = btn.getAttribute("id");
+  let userColor = btn.getAttribute("id");
   userSeq.push(userColor);
 
   checkAns(userSeq.length - 1);
 }
 
 let allBtns = document.querySelectorAll(".btn");
-for (btn of allBtns) {
+for (let btn of allBtns) {
   btn.addEventListener("click", btnPress);
 }
 async function showRandomFact() {
@@ -106,4 +111,5 @@ function reset() {
   level = 0;
 
   startBtn.style.display = "block";
+  h2.innerHTML = "Press Start to play the game";
 }
