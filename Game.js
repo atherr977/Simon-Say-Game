@@ -58,8 +58,8 @@ function checkAns(idx) {
       setTimeout(levelUp, 1000);
     }
   } else if (level!=0) {
-    if(level > HighestScore) {
-      HighestScore = level;
+    if(level-1> HighestScore) {
+      HighestScore = level-1;
     }
     h2.innerHTML = `Game Over! Your score was <b>${level}</b> <br>Highest Score:<b>${HighestScore}</b> <br> Click Start Game to play again.`;
     document.querySelector("body").style.backgroundColor = "red";
