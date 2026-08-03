@@ -47,7 +47,15 @@ body {
   border-radius: 10px;
   cursor: pointer;
 }
+@media(max-width:600px){
 
+  .btn {
+    height: 120px;
+    width: 120px;
+    margin: 1rem;
+  }
+
+}
 .watermark {
     position: fixed;
     bottom: 10px;
